@@ -1,0 +1,6 @@
+/_build/
+/cover/
+/deps/
+/doc/
+/.fetch
+fermo_slugger-*.tar
