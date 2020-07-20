@@ -4,3 +4,4 @@
 /doc/
 /.fetch
 fermo_slugger-*.tar
+/mix.lock

@@ -14,7 +14,7 @@ defmodule FermoSlugger.MixProject do
       package: package(),
       build_embedded: Mix.env() == :prod,
       start_permanent: Mix.env() == :prod,
-      deps: [],
+      deps: deps(),
       docs: [
         extras: ["README.md"],
         homepage_url: @git_origin,
@@ -27,6 +27,12 @@ defmodule FermoSlugger.MixProject do
 
   def application do
     []
+  end
+
+  defp deps do
+    [
+      {:ex_doc, ">= 0.0.0", only: :dev, runtime: false}
+    ]
   end
 
   defp package do
